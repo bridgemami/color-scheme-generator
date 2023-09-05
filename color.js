@@ -5,7 +5,6 @@ export const colorPicker = function (value, scheme, count = 5) {
     )
       .then((response) => response.json())
       .then((data) => {
-        console.log(scheme);
         const schemeEl = document.getElementById("scheme");
         const copyEl = document.getElementById("copy");
         let html = ``;
