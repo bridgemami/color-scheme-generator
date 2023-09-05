@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Color scheme generator using the Color API" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, API" />
+    <meta name="author" content="Michael Bridgeman" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon_io/site.webmanifest" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Color Scheme Generator</title>
+  </head>
+  <body>
+    <header>
+      <h1>Color Scheme Generator</h1>
+    </header>
+    <main>
+      <form id="form" class="color-inputs">
+        <input type="color" name="color" id="color" value="#000000" />
+        <select id="color-scheme" name="color-scheme" required>
+          <option value="0">Choose a scheme:</option>
+          <option value="monochrome">Monochrome</option>
+          <option value="monochrome-dark">Monochrome Dark</option>
+          <option value="monochrome-light">Monochrome Light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic-complement</option>
+          <option value="triad">Triad</option>
+          <option value="quad">Quad</option>
+        </select>
+        <button class="btn" type="submit" id="btn-submit">
+          Get color scheme
+        </button>
+        <button class="btn" type="reset" id="btn-reset">Reset</button>
+      </form>
+      <section id="scheme" class="scheme"></section>
+      <section id="copy" class="copy"></section>
+    </main>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>

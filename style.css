@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  width: 60%;
+}
+
+#form > img {
+  display: none;
+}
+
+input[type="color"] {
+  border-radius: 5%;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+select {
+  text-align: center;
+  font-weight: bold;
+  padding: 0.5em 0;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn,
+.btn-copy {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  box-shadow: 0px 1px 2px 0px #0000000d;
+  border-radius: 4%;
+  color: #374151;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 1em 0;
+}
+
+.btn-copy {
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.btn:hover,
+.btn-copy:hover .btn:focus,
+.btn-copy:focus {
+  background: #3d4b60;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.scheme {
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1em;
+  gap: 1em;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.img-color {
+  height: 25vh;
+}
+
+.hex-color,
+.name-color {
+  text-align: center;
+}
+
+.name-color {
+  padding-bottom: 1em;
+}
+
+@media (min-width: 768px) {
+  .color-inputs label {
+    padding: 0;
+  }
+  .color-inputs {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 0.5em;
+  }
+
+  input[type="color"] {
+    width: 15%;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  .btn {
+    width: 40%;
+    padding: 0.75em 0;
+    align-self: center;
+  }
+
+  .scheme {
+    flex-direction: row;
+    gap: 0.25em;
+    padding: 0 0.25em;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .scheme-container {
+    display: flex;
+  }
+  .img-color {
+    width: 18vw;
+    height: 70vh;
+  }
+
+  .btn-copy {
+    width: 100%;
+    margin: 0 0 1em 0;
+    padding: 1em;
+  }
+
+  .btn-copy:hover,
+  .btn-copy:focus {
+    background: #3d4b60;
+    cursor: pointer;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 1024px) {
+  .color-inputs {
+    width: 75%;
+  }
+
+  input[type="color"] {
+    width: 15%;
+  }
+
+  select {
+    width: 50%;
+  }
+  .btn {
+    width: 33.3%;
+  }
+}
